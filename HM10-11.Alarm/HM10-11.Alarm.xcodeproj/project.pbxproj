@@ -13,6 +13,9 @@
 		F8166A3C279F237600E65313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8166A3A279F237600E65313 /* Main.storyboard */; };
 		F8166A3E279F237800E65313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8166A3D279F237800E65313 /* Assets.xcassets */; };
 		F8166A41279F237800E65313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8166A3F279F237800E65313 /* LaunchScreen.storyboard */; };
+		F8166A49279F2B1200E65313 /* MoonVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F8166A48279F2B1200E65313 /* MoonVideo.mp4 */; };
+		F8166A4B279F764700E65313 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8166A4A279F764600E65313 /* SecondVC.swift */; };
+		F8166A5027A003A900E65313 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8166A4F27A003A900E65313 /* ThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F8166A3D279F237800E65313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8166A40279F237800E65313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8166A42279F237800E65313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8166A48279F2B1200E65313 /* MoonVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonVideo.mp4; sourceTree = "<group>"; };
+		F8166A4A279F764600E65313 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		F8166A4F27A003A900E65313 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,24 @@
 			children = (
 				F8166A34279F237600E65313 /* AppDelegate.swift */,
 				F8166A36279F237600E65313 /* SceneDelegate.swift */,
-				F8166A38279F237600E65313 /* ViewController.swift */,
+				F8166A4C279F766B00E65313 /* VC */,
 				F8166A3A279F237600E65313 /* Main.storyboard */,
 				F8166A3D279F237800E65313 /* Assets.xcassets */,
 				F8166A3F279F237800E65313 /* LaunchScreen.storyboard */,
 				F8166A42279F237800E65313 /* Info.plist */,
+				F8166A48279F2B1200E65313 /* MoonVideo.mp4 */,
 			);
 			path = "HM10-11.Alarm";
+			sourceTree = "<group>";
+		};
+		F8166A4C279F766B00E65313 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F8166A38279F237600E65313 /* ViewController.swift */,
+				F8166A4A279F764600E65313 /* SecondVC.swift */,
+				F8166A4F27A003A900E65313 /* ThirdVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8166A49279F2B1200E65313 /* MoonVideo.mp4 in Resources */,
 				F8166A41279F237800E65313 /* LaunchScreen.storyboard in Resources */,
 				F8166A3E279F237800E65313 /* Assets.xcassets in Resources */,
 				F8166A3C279F237600E65313 /* Main.storyboard in Resources */,
@@ -140,7 +158,9 @@
 			files = (
 				F8166A39279F237600E65313 /* ViewController.swift in Sources */,
 				F8166A35279F237600E65313 /* AppDelegate.swift in Sources */,
+				F8166A4B279F764700E65313 /* SecondVC.swift in Sources */,
 				F8166A37279F237600E65313 /* SceneDelegate.swift in Sources */,
+				F8166A5027A003A900E65313 /* ThirdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +315,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +345,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
